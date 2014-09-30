@@ -4,10 +4,11 @@
  */
 
 function replaceDowango(str) {
-    str = str.replace(/dowango/g, "dwango")
-    srt = str.replace(/Dowango/g, "Dwango")
-    str = str.replace(/DOWANGO/g, "DWANGO")
-    return str
+	function replacer(str, p1, p2) {
+		return p1 + p2
+	}
+
+    return str.replace(/([Dd])[oO](wango|WANGO)/g, replacer)
 }
 
 $(document).ready(function(){
