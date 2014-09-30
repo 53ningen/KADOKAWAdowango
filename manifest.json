@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "KADOKAWAdowango",
+    "version": "1.0",
+    "description": "経営統合するChrome拡張機能",
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "icons": {
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["jquery.min.js","KADOKAWAdowango.js"]
+        }
+    ]
+}
